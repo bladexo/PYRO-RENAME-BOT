@@ -39,7 +39,8 @@ async def start(client, message):
         InlineKeyboardButton("𝑴𝑶𝑽𝑰𝑬𝑺 𝑮𝑹𝑶𝑼𝑷", url='https://t.me/RedMovies1'),
         InlineKeyboardButton("☕ 𝑩𝑼𝒀 𝑴𝑬 𝑪𝑶𝑭𝑭𝑬𝑬 ☕", url='https://https://buymeacoffee.com/redofficial')
         ],[
-        InlineKeyboardButton('🛠️ 𝑯𝑬𝑳𝑷', callback_data='help')
+        InlineKeyboardButton('🛠️ 𝑯𝑬𝑳𝑷', callback_data='help'),
+       InlineKeyboardButton('🛠️ 𝑯𝑳𝑷', callback_data='hlp')
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
